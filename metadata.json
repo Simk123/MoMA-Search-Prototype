@@ -1,0 +1,5 @@
+{
+  "name": "MoMA Adaptive Search",
+  "description": "An adaptive, narrative-based search engine interface for the Museum of Modern Art that dynamically reorders content based on query relevance.",
+  "requestFramePermissions": []
+}
