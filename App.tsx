@@ -1080,8 +1080,7 @@ const App: React.FC = () => {
     setIsSearching(true);
     setPage({ type: 'search' });
     try {
-      const resp = await fetch(`http://localhost:3001/search/editorial?q=${encodeURIComponent(q)}`);
-      if (!resp.ok) throw new Error(`Status ${resp.status}`);
+      const resp = await fetch(`https://moma-search-prototype-production.up.railway.app/search/editorial?q=${encodeURIComponent(q)}`);      if (!resp.ok) throw new Error(`Status ${resp.status}`);
       const data = await resp.json();
       console.log('API response:', data);
       setEditorialData(data);
